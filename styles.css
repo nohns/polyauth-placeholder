@@ -1,0 +1,75 @@
+html,
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #05688b;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #222;
+}
+
+.fluid {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    margin: auto;
+    padding: 0 1rem;
+    width: 100vw;
+    max-width: 1200px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.primary {
+    color: var(--primary);
+}
+
+.brand {
+    width: min(50%, 300px);
+    margin: 3rem 0;
+}
+
+.title small {
+    color: #444;
+    margin-top: 3em;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 30vw;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+@media only screen and (min-width: 60rem) {
+    .title {
+        font-size: 3rem;
+    }
+}
